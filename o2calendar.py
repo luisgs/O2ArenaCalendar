@@ -8,7 +8,10 @@ logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 
 def cleanHTML(O2RawPage):
     soup = BeautifulSoup(O2RawPage, 'html.parser')
-    print soup.find_all("div", attrs={"id": "events_index"})
+#    print soup.find_all("div", attrs={"id": "events_index"})
+    soup2 = soup.find_all("div", attrs={"class": "event_preview toLeft"})
+    print(soup2[0])
+
 
 
 def curlURL(hola):
