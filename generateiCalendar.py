@@ -35,7 +35,7 @@ def toiCalendar(List_Event):
         event.add('organizer', organizer)
         event.add('dtstamp', dtstamp)
         event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
-        print(event)
+        #  print(event)
         cal.add_component(event)
         cal_content = cal.to_ical()
 
