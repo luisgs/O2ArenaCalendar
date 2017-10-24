@@ -37,7 +37,7 @@ def sparta_dates(text):
     # we return:
     # [24102017, 05112017, 17112017] in a datetimeformat!!!
     list_sparta_dates = []
-    print(text)
+    #  print(text)
     dates = text.replace(" ", "").split('....')
     year = dates[-1]
     dayMonths = dates[0].split(',')     # contains a list with dayMOnths dates.
@@ -100,8 +100,8 @@ def insertInListEvents(Events):
             else:
                 date = date_hour
                 hour = "17:00"
-            print(date)
-            print(name)
+            #  print(date)
+            #  print(name)
             dtstart = datetime.datetime(int(date.split('.')[-1]),
                                         int(date.split('.')[1]),
                                         int(date.split('.')[0]),
@@ -109,16 +109,16 @@ def insertInListEvents(Events):
                                         int(hour.split(":")[1]),
                                         tzinfo=pytz.timezone("Europe/Prague"))
             dtend = datetime.datetime(int(date.split('.')[-1]),
-                                        int(date.split('.')[1]),
-                                        int(date.split('.')[0]),
-                                        int(hour.split(":")[0])+2,  # hours
-                                        int(hour.split(":")[1]),
-                                        tzinfo=pytz.timezone("Europe/Prague"))
+                                      int(date.split('.')[1]),
+                                      int(date.split('.')[0]),
+                                      int(hour.split(":")[0])+2,  # hours
+                                      int(hour.split(":")[1]),
+                                      tzinfo=pytz.timezone("Europe/Prague"))
             # We fullfil our event entity with our data
             # data is stored in unicode. printing will show it correctly
-            print(date)
-            print(dtstart)
-            print(hour)
+            #  print(date)
+            #  print(dtstart)
+            #  print(hour)
             event = {'name': name,
                      'dtstart': dtstart,
                      'dtend': dtend,
@@ -136,7 +136,7 @@ def insertInListEvents(Events):
 
 
 def curlURL(URL):
-#    logging.info('curl: URL function. Scraping website')
+    # logging.info('curl: URL function. Scraping website')
     # we request to read an URL
     page = urlopen(URL)
     # we read it and send it

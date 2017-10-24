@@ -1,5 +1,6 @@
 from icalendar import vCalAddress, vText, Calendar, Event
 from datetime import datetime
+import pytz
 
 # iCalendar
 
@@ -15,24 +16,30 @@ def toiCalendar(List_Event):
     #               'image': ""}
     # ]
     cal = Calendar()
-
+    cal.add('prodid', '-//O2 Arena calendar')
+    cal.add('version', '2.0')
     organizer = vCalAddress('MAILTO:email@noreply.com')
+
     location = vText('O2Arena at Ceskomoravska')
+
+    dtstamp = datetime(2017, 10, 24, 0, 0, 0, tzinfo=pytz.utc)
 
     for i in (range(len(List_Event))):
         event = Event()
-        print("Elem %i and name %s" %(i, List_Event[i]['name']))
-        print(List_Event[i]['dtstart'])
+#        print("Elem %i and name %s" %(i, List_Event[i]['name']))
+#        print(List_Event[i]['dtstart'])
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
         event.add('summary', (List_Event[i]['name']))
         event.add('location', location)
         event.add('organizer', organizer)
-        event['uid'] = '20050115T101010/27346262376@mxm.dk'
+        event.add('dtstamp', dtstamp)
+        event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
+        print(event)
         cal.add_component(event)
         cal_content = cal.to_ical()
 
-    with open("meeting.ics", 'wb') as f:
+    with open("O2ArenaCalendar.ics", 'wb') as f:
         f.write(cal_content)
 
 
