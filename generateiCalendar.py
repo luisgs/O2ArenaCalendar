@@ -31,9 +31,7 @@ def toiCalendar(List_Event):
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
         event.add('summary', (List_Event[i]['name']))
-        event.add('description', "Information regarding this event via: " +
-                  (List_Event[i]['infoLink']) + ". You can buy tickets via: " +
-                  List_Event[i]['ticketsLink'])
+        event.add('description', List_Event[i]['description'])
         event.add('location', location)
         event.add('organizer', organizer)
         event.add('dtstamp', dtstamp)

@@ -71,7 +71,7 @@ def insertInListEvents(Events):
         infoLink = Events[i].find('h3').find('a').attrs['href']
         ticketsLink = Events[i].find('a').attrs['href']
         image = Events[i].find('div').attrs['style']
-
+        description = ''
         date_hour = Events[i].find('p').text
         if name == 'Sparta':
             list_sparta_dates = sparta_dates(date_hour)
@@ -84,6 +84,7 @@ def insertInListEvents(Events):
                          'dtend': list_sparta_dates[i][1],
                          'infoLink': infoLink,
                          'category': "SPORT",
+                         'description': description,
                          'ticketsLink': ticketsLink,
                          'image': image}
                 # Insert event element in our list
@@ -120,16 +121,22 @@ def insertInListEvents(Events):
             #  print(date)
             #  print(dtstart)
             #  print(hour)
+            description = 'Informational link via: ' + infoLink + \
+                          '. You can buy tickets via: ' + ticketsLink
+#            print(Events[0])
+#            print(ticketsLink)
+            TicketsSold = ThereAreTickets.ThereAreTickets(ticketsLink.replace("´",""))
             event = {'name': name,
                      'dtstart': dtstart,
                      'dtend': dtend,
                      'infoLink': infoLink,
                      'category': "OTHERS",
                      'ticketsLink': ticketsLink,
-                     'image': image}
+                     'description': description,
+                     'image': image,
+                     'TicketsSold': TicketsSold}
             # Insert event element in our list
             List_events.append(event.copy())
-#        print(Events[0])
 #        break
 #    print(List_events[0]['name'])
 #    print(List_events[0])
