@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import datetime
 import generateiCalendar
 import pytz
+import ThereAreTickets
 
 O2EventsURL = "https://www.o2arena.cz/en/events/"
 
