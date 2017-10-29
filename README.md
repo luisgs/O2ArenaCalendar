@@ -23,3 +23,6 @@ python3 o2calendar.py
 ```
 
 This script will generate a file called: "o2arencacalendar.ics" in the same folder where this script is executed.
+
+### Output
+There is a icalendar.ics output posted in this repo
