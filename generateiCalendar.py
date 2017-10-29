@@ -1,4 +1,4 @@
-from icalendar import vCalAddress, vText, Calendar, Event
+from icalendar import vCalAddress, vText, Calendar, Event, Alarm
 from datetime import datetime
 import pytz
 
@@ -26,8 +26,8 @@ def toiCalendar(List_Event):
 
     for i in (range(len(List_Event))):
         event = Event()
-#        print("Elem %i and name %s" %(i, List_Event[i]['name']))
-#        print(List_Event[i]['dtstart'])
+        print("Elem %i and name %s" %(i, List_Event[i]['name']))
+        print(List_Event[i])
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
         event.add('summary', (List_Event[i]['name']))
@@ -36,6 +36,12 @@ def toiCalendar(List_Event):
         event.add('organizer', organizer)
         event.add('dtstamp', dtstamp)
         event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
+        if List_Event[i]['TicketsSold']:
+            alarm = Alarm()
+            alarm.add("action", "DISPLAY")
+            alarm.add("description", "Reminder")
+            alarm.add("TRIGGER;RELATED=START", "-PT{0}H".format(1))
+            event.add_component(alarm)
         #  print(event)
         cal.add_component(event)
         cal_content = cal.to_ical()

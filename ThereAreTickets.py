@@ -2,6 +2,8 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import logging
 import sys
+from urllib.error import HTTPError
+
 
 URL = 'https://www.ticketportal.cz/Event/METALLICA'
 URL2 = 'https://www.o2arena.cz/en/events/Ritchie-Blackmore´s-RAINBOW_438.html'
@@ -10,10 +12,28 @@ logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 
 
 def ThereAreTickets(URL):
+    """ ThereAreTickets?
+    We received an URL where to buy tickets and scrap it
+    if there are tickets left = 1
+    if not = 0
+    eoc = -1
+    """
     logging.info('AreAllTicketsSold: reading URL and parsing it!')
     # We read ticket website
-    soup = BeautifulSoup(urlopen(URL))
-    text = soup.findAll("div", attrs={"class": "status"})
+    try:
+        soup = BeautifulSoup(urlopen(URL))
+    except HTTPError as error:
+        logging.info('ThereAreTickets: Error while openning a url')
+        logging.info('URL: Error code is %s'% error)
+#        logging.info('URL: %s'% (URL))
+        return -1
+
+    try:
+        text = soup.findAll("div", attrs={"class": "status"})
+    except:
+        logging.info('ThereAreTickets: Error parsing an URL')
+        logging.info('URL: %s'% (URL))
+        return -1
 
     # We have parsed a html file and we know that in a div class called 'status'
     # 'status' class contains a string that says: no more tickets
