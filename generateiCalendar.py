@@ -21,29 +21,31 @@ def toiCalendar(List_Event):
     organizer = vCalAddress('MAILTO:email@noreply.com')
 
     location = vText('O2Arena at Ceskomoravska')
-
+    description = ""
     dtstamp = datetime(2017, 10, 24, 0, 0, 0, tzinfo=pytz.utc)
 
     for i in (range(len(List_Event))):
         event = Event()
-        print("Elem %i and name %s" %(i, List_Event[i]['name']))
-        print(List_Event[i])
+        print("Elem %i and name %s" % (i, List_Event[i]['name']))
+#        print(List_Event[i])
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
         event.add('summary', (List_Event[i]['name']))
-        event.add('description', List_Event[i]['description'])
         event.add('location', location)
         event.add('organizer', organizer)
         event.add('dtstamp', dtstamp)
         event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
-        if List_Event[i]['TicketsSold']:
+        if (List_Event[i]['TicketsLeft'] == 0):
             alarm = Alarm()
             alarm.add("action", "DISPLAY")
             alarm.add("description", "Reminder")
             alarm.add("TRIGGER;RELATED=START", "-PT{0}H".format(1))
+            description = "This event is FULL! "
             event.add_component(alarm)
         #  print(event)
+        event.add('description', description + List_Event[i]['description'])
         cal.add_component(event)
+        print(event)
         cal_content = cal.to_ical()
 
     with open("O2ArenaCalendar.ics", 'wb') as f:
