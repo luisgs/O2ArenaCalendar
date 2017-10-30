@@ -20,7 +20,7 @@ def toiCalendar(List_Event):
     cal.add('version', '2.0')
     organizer = vCalAddress('MAILTO:email@noreply.com')
 
-    location = vText('O2Arena at Ceskomoravska')
+    location = vText('O2 Arena at Ceskomoravska')
     description = ""
     dtstamp = datetime(2017, 10, 24, 0, 0, 0, tzinfo=pytz.utc)
 
@@ -33,8 +33,11 @@ def toiCalendar(List_Event):
         event.add('summary', (List_Event[i]['name']))
         event.add('location', location)
         event.add('organizer', organizer)
+        event.add('url', List_Event[i]['infoLink'])
+        event.add('geo', '50.104788;14.493774')
         event.add('dtstamp', dtstamp)
         event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
+        # if there are NOT tickets left.
         if (List_Event[i]['TicketsLeft'] == 0):
             alarm = Alarm()
             alarm.add("action", "DISPLAY")
@@ -45,7 +48,7 @@ def toiCalendar(List_Event):
         #  print(event)
         event.add('description', description + List_Event[i]['description'])
         cal.add_component(event)
-        print(event)
+        #  print(event)
         cal_content = cal.to_ical()
 
     with open("O2ArenaCalendar.ics", 'wb') as f:

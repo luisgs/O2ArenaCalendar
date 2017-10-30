@@ -7,7 +7,7 @@ from urllib.error import HTTPError
 
 URL = 'https://www.ticketportal.cz/Event/METALLICA'
 URL2 = 'https://www.o2arena.cz/en/events/Ritchie-Blackmore´s-RAINBOW_438.html'
-URL3 = 'http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=81'
+URL3='http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=37'
 
 logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
 
@@ -25,7 +25,7 @@ def ThereAreTickets(URL):
         soup = BeautifulSoup(urlopen(URL))
     except HTTPError as error:
         logging.info('ThereAreTickets: Error while openning a url')
-        logging.info('URL: Error code is %s'% error)
+        logging.info('URL: Error code is %s' % error)
 #        logging.info('URL: %s'% (URL))
         return -1
 
@@ -33,7 +33,7 @@ def ThereAreTickets(URL):
         text = soup.findAll("div", attrs={"class": "status"})
     except:
         logging.info('ThereAreTickets: Error parsing an URL')
-        logging.info('URL: %s'% (URL))
+        logging.info('URL: %s' % (URL))
         return -1
 
     # We have parsed a html file and we know that in a div class called 'status'
@@ -41,7 +41,7 @@ def ThereAreTickets(URL):
     if text is not None and len(text) > 0:
         text = text[0].find('p').text
         if text.find('V síti Ticketportal nyní vyprodáno.') != -1:  # no tickets
-            logging.info("There are NOT tickets left!!")
+            logging.info("There are NOT tickets left!!" + URL)
             return 0    # All is sold!
         else:
             # for any reason this text changes...

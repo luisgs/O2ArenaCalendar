@@ -7,16 +7,13 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171101T200000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171101T220000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/0@luisgs.github
-DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
- a.cz/en/events/QUEEN-+-Adam-Lambert_284.html. You can buy tickets via: htt
- p://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=972
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:Informational link via: https://www.o2arena.cz/en/events/QUEEN
+ -+-Adam-Lambert_284.html. You can buy tickets via: http://retro.ticketport
+ al.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=972
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-TRIGGER;RELATED=START:-PT1H
-END:VALARM
+URL:https://www.o2arena.cz/en/events/QUEEN-+-Adam-Lambert_284.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:FMX Gladiator Games 2017
@@ -24,12 +21,13 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171104T173000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171104T193000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/1@luisgs.github
-DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
- a.cz/en/events/FMX-Gladiator-Games-2017_309.html. You can buy tickets via:
-  http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=7
- 26
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:Informational link via: https://www.o2arena.cz/en/events/FMX-G
+ ladiator-Games-2017_309.html. You can buy tickets via: http://retro.ticket
+ portal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=726
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/FMX-Gladiator-Games-2017_309.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sparta
@@ -37,9 +35,12 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171105T182000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171105T200000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/2@luisgs.github
-DESCRIPTION:This event is FULL! 
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events_group/HC-SPARTA-PRAHA-Tipsport-Extral
+ iga-2017-2018_11.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sparta
@@ -47,9 +48,12 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171117T182000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171117T200000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/3@luisgs.github
-DESCRIPTION:This event is FULL! 
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events_group/HC-SPARTA-PRAHA-Tipsport-Extral
+ iga-2017-2018_11.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Sparta
@@ -57,9 +61,12 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171119T182000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171119T200000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/4@luisgs.github
-DESCRIPTION:This event is FULL! 
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events_group/HC-SPARTA-PRAHA-Tipsport-Extral
+ iga-2017-2018_11.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Gorillaz
@@ -67,11 +74,13 @@ DTSTART;TZID=Europe/Prague;VALUE=DATE-TIME:20171114T200000
 DTEND;TZID=Europe/Prague;VALUE=DATE-TIME:20171114T220000
 DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/5@luisgs.github
-DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
- a.cz/en/events/Gorillaz-Humanz-Tour_306.html. You can buy tickets via: htt
- p://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=6
-LOCATION:O2Arena at Ceskomoravska
+DESCRIPTION:Informational link via: https://www.o2arena.cz/en/events/Goril
+ laz-Humanz-Tour_306.html. You can buy tickets via: http://retro.ticketport
+ al.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=6
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Gorillaz-Humanz-Tour_306.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Chinaski
@@ -83,8 +92,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Chinaski-NENI-NAM-DO-PLACE-TOUR_311.html. You can buy ticke
  ts via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?ev
  entID=788
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Chinaski-NENI-NAM-DO-PLACE-TOUR_311.h
+ tml
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -100,8 +112,10 @@ UID:20171024/7@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/TRANSMISSION-festival_313.html. You can buy tickets via: ht
  tp://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=930
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/TRANSMISSION-festival_313.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Kabát
@@ -112,8 +126,10 @@ UID:20171024/8@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Kabat-Tour-2017_288.html. You can buy tickets via: http://r
  etro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=721
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Kabat-Tour-2017_288.html
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -130,8 +146,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/The-Lord-Of-The-Rings-3-The-Return-of-the-King_315.html. Yo
  u can buy tickets via: http://retro.ticketportal.cz/activeRoot/VIPzone_sea
  tingPlan.asp?eventID=731
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/The-Lord-Of-The-Rings-3-The-Return-of
+ -the-King_315.html
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -147,8 +166,10 @@ UID:20171024/10@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/XFN-6_345.html. You can buy tickets via: http://retro.ticke
  tportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=46
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/XFN-6_345.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Olympic
@@ -159,8 +180,10 @@ UID:20171024/11@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Olympic-55_286.html. You can buy tickets via: http://retro.
  ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=766
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Olympic-55_286.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:CZECHIA - FINLAND
@@ -171,8 +194,10 @@ UID:20171024/12@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/CZECHIA-FINLAND_436.html. You can buy tickets via: http://r
  etro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=387
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/CZECHIA-FINLAND_436.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Czech Party With Impuls 2017
@@ -184,8 +209,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Czech-Party-With-Impuls-2017_317.html. You can buy tickets 
  via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?event
  ID=809
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Czech-Party-With-Impuls-2017_317.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Apassionata - Der Traum
@@ -196,8 +223,10 @@ UID:20171024/14@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events_group/Apassionata-Der-Traum_13.html. You can buy tickets vi
  a: https://www.o2arena.cz/en/events_group/Apassionata-Der-Traum_13.html
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events_group/Apassionata-Der-Traum_13.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Cinderella on ice
@@ -208,8 +237,10 @@ UID:20171024/15@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Cinderella-on-ice_294.html. You can buy tickets via: http:/
  /retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=983
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Cinderella-on-ice_294.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Harry Potter and The Chamber of Secrets
@@ -221,8 +252,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Harry-Potter-and-The-Chamber-of-Secrets-in-concert_415.html
  . You can buy tickets via: http://retro.ticketportal.cz/activeRoot/VIPzone
  _seatingPlan.asp?eventID=332
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Harry-Potter-and-The-Chamber-of-Secre
+ ts-in-concert_415.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:HELENA VONDRÁČKOVÁ
@@ -233,8 +267,10 @@ UID:20171024/17@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/HELENA-VONDRACKOVA-70_308.html. You can buy tickets via: ht
  tp://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=27
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/HELENA-VONDRACKOVA-70_308.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:DEPECHE MODE
@@ -246,8 +282,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/DEPECHE-MODE-Global-Spirit-Tour_343.html. You can buy ticke
  ts via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?ev
  entID=37
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/DEPECHE-MODE-Global-Spirit-Tour_343.h
+ tml
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -263,8 +302,10 @@ UID:20171024/19@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Kelly-Family_266.html. You can buy tickets via: http://retr
  o.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=833
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Kelly-Family_266.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Planet Earth II
@@ -276,8 +317,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Planet-Earth-II-Live-in-Concert_417.html. You can buy ticke
  ts via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?ev
  entID=339
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Planet-Earth-II-Live-in-Concert_417.h
+ tml
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Metallica
@@ -288,8 +332,10 @@ UID:20171024/21@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Metallica_282.html. You can buy tickets via: http://retro.t
  icketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=941
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Metallica_282.html
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -306,8 +352,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Imagine-Dragons-2018-EVOLVE_411.html. You can buy tickets v
  ia: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventI
  D=324
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Imagine-Dragons-2018-EVOLVE_411.html
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Reminder
@@ -322,10 +370,12 @@ DTSTAMP;VALUE=DATE-TIME:20171024T000000Z
 UID:20171024/23@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Ritchie-Blackmore´s-RAINBOW_438.html. You can buy tickets 
- via: https://www.o2arena.cz/en/events/Ritchie-Blackmore´s-RAINBOW_438.htm
- l
-LOCATION:O2Arena at Ceskomoravska
+ via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?event
+ ID=429
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Ritchie-Blackmore´s-RAINBOW_438.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Roger Waters
@@ -336,8 +386,10 @@ UID:20171024/24@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Roger-Waters_421.html. You can buy tickets via: http://retr
  o.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=303
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Roger-Waters_421.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Roger Waters
@@ -349,8 +401,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Roger-Waters-Added-Show_434.html. You can buy tickets via: 
  http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=31
  0
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Roger-Waters-Added-Show_434.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:ANDREA BOCELLI
@@ -362,8 +416,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/ANDREA-BOCELLI-in-Concert_319.html. You can buy tickets via
  : http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=
  22
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/ANDREA-BOCELLI-in-Concert_319.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Hra o trůny
@@ -375,8 +431,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Hra-o-truny-Live-Concert-Experience_419.html. You can buy t
  ickets via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.as
  p?eventID=350
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Hra-o-truny-Live-Concert-Experience_4
+ 19.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Marpo & TroubleGang
@@ -388,8 +447,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Marpo-TroubleGang-Dead-Man-Walking_305.html. You can buy ti
  ckets via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp
  ?eventID=32
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Marpo-TroubleGang-Dead-Man-Walking_30
+ 5.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:André Rieu
@@ -401,8 +463,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Andre-Rieu-in-Prague-2018_407.html. You can buy tickets via
  : http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=
  292
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Andre-Rieu-in-Prague-2018_407.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:ELVIS in CONCERT
@@ -414,8 +478,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/ELVIS-in-CONCERT-THE-WONDER-OF-YOU_347.html. You can buy ti
  ckets via: http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp
  ?eventID=52
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/ELVIS-in-CONCERT-THE-WONDER-OF-YOU_34
+ 7.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Pirates of the Caribbean in Concert
@@ -427,8 +494,11 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Pirates-of-the-Caribbean-in-Concert-The-Curse-of-the-Black-
  Pearl_440.html. You can buy tickets via: http://retro.ticketportal.cz/acti
  veRoot/VIPzone_seatingPlan.asp?eventID=408
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Pirates-of-the-Caribbean-in-Concert-T
+ he-Curse-of-the-Black-Pearl_440.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Shania Twain
@@ -439,8 +509,10 @@ UID:20171024/32@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Shania-Twain_427.html. You can buy tickets via: http://retr
  o.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=359
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Shania-Twain_427.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:ŠKWOR
@@ -451,8 +523,10 @@ UID:20171024/33@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/SKWOR_413.html. You can buy tickets via: http://retro.ticke
  tportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=318
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/SKWOR_413.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:LUCIE
@@ -464,8 +538,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/LUCIE-EVOLUCIE-Tour-2018_321.html. You can buy tickets via:
   http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=9
  67
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/LUCIE-EVOLUCIE-Tour-2018_321.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:ELÁN
@@ -477,8 +553,10 @@ DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/ELAN-50-years-tour-2018_405.html. You can buy tickets via: 
  http://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=28
  2
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/ELAN-50-years-tour-2018_405.html
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Máša a medvěd
@@ -489,7 +567,9 @@ UID:20171024/36@luisgs.github
 DESCRIPTION:This event is FULL! Informational link via: https://www.o2aren
  a.cz/en/events/Masa-a-medved-Ice-Show_409.html. You can buy tickets via: h
  ttp://retro.ticketportal.cz/activeRoot/VIPzone_seatingPlan.asp?eventID=81
-LOCATION:O2Arena at Ceskomoravska
+GEO:5.0;0.0
+LOCATION:O2 Arena at Ceskomoravska
 ORGANIZER:MAILTO:email@noreply.com
+URL:https://www.o2arena.cz/en/events/Masa-a-medved-Ice-Show_409.html
 END:VEVENT
 END:VCALENDAR

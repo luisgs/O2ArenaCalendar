@@ -25,7 +25,9 @@ event_sample = {'name': "Event Sample",
                 'ticketsLink': "",
                 'description': "",
                 'image': "",
-                'TicketsSold': -1}
+                'TicketsLeft': 1}   #  = 1 There are tickets left!
+                                    #  = 0 there are not
+                                    #  = -1 Error
 
 def cleanHTML(O2RawPage):
     """ CleanHTML
@@ -91,7 +93,7 @@ def insertInListEvents(Events):
                 # We fullfil our event entity with our data
                 # data is stored in unicode. printing will show it correctly
                 event = copy.deepcopy(event_sample)
-                print(event)
+                # print(event)
                 event.update({'name': name,
                               'dtstart': list_sparta_dates[i][0],
                               'dtend': list_sparta_dates[i][1],
@@ -99,8 +101,7 @@ def insertInListEvents(Events):
                               'category': "SPORT",
                               'description': description,
                               'ticketsLink': ticketsLink,
-                              'TicketsSold': ThereAreTickets.
-                                                 ThereAreTickets(ticketsLink.replace("´","")),
+                              'TicketsLeft': 1,
                               'image': image})
                 # Insert event element in our list
                 List_events.append(event)
@@ -141,7 +142,7 @@ def insertInListEvents(Events):
                           '. You can buy tickets via: ' + ticketsLink
 #            print(Events[0])
 #            print(ticketsLink)
-            TicketsSold = ThereAreTickets.ThereAreTickets(ticketsLink.replace("´",""))
+            TicketsLeft = ThereAreTickets.ThereAreTickets(ticketsLink.replace("´",""))
             event = {'name': name,
                      'dtstart': dtstart,
                      'dtend': dtend,
@@ -150,7 +151,7 @@ def insertInListEvents(Events):
                      'ticketsLink': ticketsLink,
                      'description': description,
                      'image': image,
-                     'TicketsSold': TicketsSold}
+                     'TicketsLeft': TicketsLeft}
             # Insert event element in our list
             List_events.append(event.copy())
 #        break
