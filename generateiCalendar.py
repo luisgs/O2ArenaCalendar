@@ -3,8 +3,6 @@ from datetime import datetime
 import pytz
 
 # iCalendar
-
-
 def toiCalendar(List_Event):
     # Entry value has the following structure: it is a LIST!!!
     # [      event = {'name': '',
@@ -21,22 +19,23 @@ def toiCalendar(List_Event):
     organizer = vCalAddress('MAILTO:email@noreply.com')
 
     location = vText('O2 Arena at Ceskomoravska')
-    description = ""
     dtstamp = datetime(2017, 10, 24, 0, 0, 0, tzinfo=pytz.utc)
 
     for i in (range(len(List_Event))):
         event = Event()
+        description = ""
         print("Elem %i and name %s" % (i, List_Event[i]['name']))
 #        print(List_Event[i])
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
-        event.add('summary', (List_Event[i]['name']))
+        event.add('summary', List_Event[i]['name'])
         event.add('location', location)
         event.add('organizer', organizer)
         event.add('url', List_Event[i]['infoLink'])
         event.add('geo', '50.104788;14.493774')
         event.add('dtstamp', dtstamp)
-        event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.strftime("%Y%m%d"), i))
+        event['uid'] = ("%s/%i@luisgs.github" % (dtstamp.now().strftime("%Y%m%d%H%M%S"), i))
+        print(event['uid'])
         # if there are NOT tickets left.
         if (List_Event[i]['TicketsLeft'] == 0):
             alarm = Alarm()
@@ -56,4 +55,4 @@ def toiCalendar(List_Event):
 
 
 if __name__ == "__main__":
-    toiCalendar("asd")
+    toiCalendar()

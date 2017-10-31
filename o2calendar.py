@@ -27,7 +27,8 @@ event_sample = {'name': "Event Sample",
                 'image': "",
                 'TicketsLeft': 1}   #  = 1 There are tickets left!
                                     #  = 0 there are not
-                                    #  = -1 Error
+                                    #  = -1 Error   """
+
 
 def cleanHTML(O2RawPage):
     """ CleanHTML
@@ -84,15 +85,15 @@ def insertInListEvents(Events):
         infoLink = Events[i].find('h3').find('a').attrs['href']
         ticketsLink = Events[i].find('a').attrs['href']
         image = Events[i].find('div').attrs['style']
-        description = ''
+        description = ('Informational link via: %s.\nYou can buy tickets via: %s' % (infoLink, ticketsLink))
         date_hour = Events[i].find('p').text
+        event = copy.deepcopy(event_sample)
         if name == 'Sparta':
             list_sparta_dates = sparta_dates(date_hour)
             # print("La fecha es %s"% ( sparta_dates(date_hour)))
             for i in range(len(list_sparta_dates)):
                 # We fullfil our event entity with our data
                 # data is stored in unicode. printing will show it correctly
-                event = copy.deepcopy(event_sample)
                 # print(event)
                 event.update({'name': name,
                               'dtstart': list_sparta_dates[i][0],
@@ -101,7 +102,7 @@ def insertInListEvents(Events):
                               'category': "SPORT",
                               'description': description,
                               'ticketsLink': ticketsLink,
-                              'TicketsLeft': 1,
+                              'TicketsLeft': 1,  #  Spart = always tickets
                               'image': image})
                 # Insert event element in our list
                 List_events.append(event)
@@ -138,22 +139,21 @@ def insertInListEvents(Events):
             #  print(date)
             #  print(dtstart)
             #  print(hour)
-            description = 'Informational link via: ' + infoLink + \
-                          '. You can buy tickets via: ' + ticketsLink
 #            print(Events[0])
 #            print(ticketsLink)
             TicketsLeft = ThereAreTickets.ThereAreTickets(ticketsLink.replace("´",""))
-            event = {'name': name,
-                     'dtstart': dtstart,
-                     'dtend': dtend,
-                     'infoLink': infoLink,
-                     'category': "OTHERS",
-                     'ticketsLink': ticketsLink,
-                     'description': description,
-                     'image': image,
-                     'TicketsLeft': TicketsLeft}
+            event.update({'name': name,
+                          'dtstart': dtstart,
+                          'dtend': dtend,
+                          'infoLink': infoLink,
+                          'category': "OTHERS",
+                          'ticketsLink': ticketsLink,
+                          'description': description,
+                          'image': image,
+                          'TicketsLeft': TicketsLeft})
+            # After working out and fullfilling event, we insert it
             # Insert event element in our list
-            List_events.append(event.copy())
+            List_events.append(event)
 #        break
 #    print(List_events[0]['name'])
 #    print(List_events[0])
