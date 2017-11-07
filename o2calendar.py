@@ -69,7 +69,7 @@ def sparta_dates(text):
                                   tzinfo=pytz.timezone("Europe/Prague"))
 #        print(dtstart)
         list_sparta_dates = list_sparta_dates + [[dtstart, dtend]]
-#    print(list_sparta_dates)
+    print(list_sparta_dates)
     logging.info('exiting SPARTA DATES')
     return list_sparta_dates
 
@@ -87,11 +87,11 @@ def insertInListEvents(Events):
         image = Events[i].find('div').attrs['style']
         description = ('Informational link via: %s.\nYou can buy tickets via: %s' % (infoLink, ticketsLink))
         date_hour = Events[i].find('p').text
-        event = copy.deepcopy(event_sample)
         if name == 'Sparta':
             list_sparta_dates = sparta_dates(date_hour)
             # print("La fecha es %s"% ( sparta_dates(date_hour)))
             for i in range(len(list_sparta_dates)):
+                event = copy.deepcopy(event_sample)
                 # We fullfil our event entity with our data
                 # data is stored in unicode. printing will show it correctly
                 # print(event)
@@ -106,7 +106,9 @@ def insertInListEvents(Events):
                               'image': image})
                 # Insert event element in our list
                 List_events.append(event)
+#                print(List_events[-1])
         else:
+            event = copy.deepcopy(event_sample)
             if date_hour.find(',') != -1:   # found!
                 if date_hour.find('hod') != -1:     # found it!
                     # date_hour has this form: 27.4.2017, 20.00 hod
@@ -154,7 +156,7 @@ def insertInListEvents(Events):
             # After working out and fullfilling event, we insert it
             # Insert event element in our list
             List_events.append(event)
-#        break
+#       break
 #    print(List_events[0]['name'])
 #    print(List_events[0])
     logging.info('exiting inserting in LIst')

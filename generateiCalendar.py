@@ -24,7 +24,7 @@ def toiCalendar(List_Event):
     for i in (range(len(List_Event))):
         event = Event()
         description = ""
-        print("Elem %i and name %s" % (i, List_Event[i]['name']))
+        print("Elem %i and name %s and datestart %s" % (i, List_Event[i]['name'], List_Event[i]['dtstart']))
 #        print(List_Event[i])
         event.add('dtstart', List_Event[i]['dtstart'])
         event.add('dtend', List_Event[i]['dtend'])
