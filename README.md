@@ -16,7 +16,7 @@ This script requires:
 ```
 * Python3
 * bs4 lib
-* [icalendar lib](http://icalendar.readthedocs.io/en/latest/install.html)
+* [icalendar lib](http://icalendar.readthedocs.io/en/latest/install.html).
 ```
 
 ### Executing
