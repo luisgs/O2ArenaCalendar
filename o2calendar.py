@@ -36,7 +36,7 @@ def cleanHTML(O2RawPage):
     that contains the list of events
     """
     #  logging.info('cleanHTML: extracting only HTML sectionwith events')
-    soup = BeautifulSoup(O2RawPage, 'html.parser')
+    soup = BeautifulSoup(O2RawPage, 'lxml')
     soup2 = soup.find_all("div", attrs={"class": "event_preview toLeft"})
     #  logging.info('exiting SPARTA DATES')
     return soup2
@@ -50,11 +50,13 @@ def sparta_dates(text):
     """
     logging.info('SPARTA DATES: Creating a list of dates')
     list_sparta_dates = []
-    #  print(text)
+#    print(text)
     dates = text.replace(" ", "").split('....')
-    year = dates[-1]
+    year = dates[-1].split('.')[-1]
     dayMonths = dates[0].split(',')     # contains a list with dayMOnths dates.
     dates1 = dayMonths + [year]         # contains [11.5, 12.6, 13.5, 2017]
+#    print(dates)
+#    print(dates1)
     #
     #  event.add('dtstart', datetime(2010, 10, 10, 10, 0, 0,
     #       tzinfo=pytz.timezone("Europe/Vienna")))
@@ -122,7 +124,7 @@ def insertInListEvents(Events):
             else:
                 date = date_hour
                 hour = "17:00"
-            #  print(date)
+            # print(date)
             #  print(name)
             dtstart = datetime.datetime(int(date.split('.')[-1]),
                                         int(date.split('.')[1]),
@@ -133,7 +135,7 @@ def insertInListEvents(Events):
             dtend = datetime.datetime(int(date.split('.')[-1]),
                                       int(date.split('.')[1]),
                                       int(date.split('.')[0]),
-                                      int(hour.split(":")[0])+2,  # hours
+                                      int(hour.split(":")[0])+1,  # hours
                                       int(hour.split(":")[1]),
                                       tzinfo=pytz.timezone("Europe/Prague"))
             # We fullfil our event entity with our data
